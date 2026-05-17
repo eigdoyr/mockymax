@@ -1,0 +1,21 @@
+{
+  "name": "mockymax",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Free mockup generator. Drop a screenshot, get a premium device mockup.",
+  "license": "MIT",
+  "author": "eigdoyr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eigdoyr/mockymax.git"
+  },
+  "homepage": "https://github.com/eigdoyr/mockymax",
+  "bugs": {
+    "url": "https://github.com/eigdoyr/mockymax/issues"
+  },
+  "packageManager": "pnpm@11.1.2",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=11.1.2"
+  }
+}
