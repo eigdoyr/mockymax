@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "studio/macbook-concrete-01",
+  "name": "MacBook on Concrete",
+  "collection": "studio",
+  "device": {
+    "type": "laptop",
+    "model": "macbook-pro-16",
+    "screenAspectRatio": "16:10"
+  },
+  "tags": ["minimal", "concrete", "overcast", "top-down"],
+  "assets": {
+    "background": "background.webp",
+    "overlay": null,
+    "reflection": "reflection.webp",
+    "thumb": "thumb.webp"
+  },
+  "screenQuad": {
+    "topLeft": [412, 280],
+    "topRight": [1508, 290],
+    "bottomLeft": [402, 928],
+    "bottomRight": [1518, 938]
+  },
+  "render": {
+    "reflectionBlendMode": "screen",
+    "reflectionOpacity": 0.18,
+    "screenFit": "cover"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}
