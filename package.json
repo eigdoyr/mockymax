@@ -24,6 +24,7 @@
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "format": "pnpm -r format",
-    "format:check": "pnpm -r format:check"
+    "format:check": "pnpm -r format:check",
+    "test": "pnpm -r test"
   }
 }
