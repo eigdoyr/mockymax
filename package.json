@@ -16,6 +16,12 @@
   "packageManager": "pnpm@11.1.2",
   "engines": {
     "node": ">=22.0.0",
-    "pnpm": ">=11.1.2"
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
   }
 }
