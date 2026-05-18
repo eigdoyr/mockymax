@@ -16,10 +16,10 @@
     "thumb": "thumb.webp"
   },
   "screenQuad": {
-    "topLeft": [412, 280],
-    "topRight": [1508, 290],
-    "bottomLeft": [402, 928],
-    "bottomRight": [1518, 938]
+    "topLeft": [258, 110],
+    "topRight": [784, 111],
+    "bottomLeft": [286, 353],
+    "bottomRight": [742, 354]
   },
   "render": {
     "reflectionBlendMode": "screen",
