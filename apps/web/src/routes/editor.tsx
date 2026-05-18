@@ -20,6 +20,8 @@ function EditorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [manifest, setManifest] = useState<SceneManifestV1 | null>(null);
   const [status, setStatus] = useState<string>("idle");
+  const [pickingCorners, setPickingCorners] = useState(false);
+  const [pickedCorners, setPickedCorners] = useState<Array<[number, number]>>([]);
 
   async function handleLoadScene() {
     const id = "studio/macbook-concrete-01";
@@ -40,6 +42,25 @@ function EditorPage() {
       await exportCanvasAsPng(canvasRef.current);
     } catch (err) {
       setStatus(err instanceof Error ? err.message : "export failed");
+    }
+  }
+
+  function handleCanvasClick(e: React.MouseEvent<HTMLCanvasElement>) {
+    if (!pickingCorners) return;
+    const canvas = e.currentTarget;
+    const rect = canvas.getBoundingClientRect();
+    // Scale click position from display size to canvas pixel size
+    const x = Math.round(((e.clientX - rect.left) / rect.width) * canvas.width);
+    const y = Math.round(((e.clientY - rect.top) / rect.height) * canvas.height);
+    const next = [...pickedCorners, [x, y] as [number, number]];
+    setPickedCorners(next);
+    if (next.length === 4) {
+      const [tl, tr, br, bl] = next;
+      console.log(
+        "Screen quad:",
+        JSON.stringify({ topLeft: tl, topRight: tr, bottomRight: br, bottomLeft: bl }, null, 2),
+      );
+      setPickingCorners(false);
     }
   }
 
@@ -112,6 +133,16 @@ function EditorPage() {
           <button
             type="button"
             onClick={() => {
+              setPickingCorners(true);
+              setPickedCorners([]);
+            }}
+            className="rounded-md border border-amber-400 bg-amber-50 px-3 py-1.5 text-sm text-amber-900 hover:bg-amber-100"
+          >
+            Pick corners
+          </button>
+          <button
+            type="button"
+            onClick={() => {
               reset();
               setManifest(null);
               setStatus("idle");
@@ -129,7 +160,18 @@ function EditorPage() {
         </div>
 
         <div className="mt-4 overflow-auto rounded border border-neutral-200 bg-neutral-50">
-          <canvas ref={canvasRef} className="block max-w-full" />
+          <canvas
+            ref={canvasRef}
+            onClick={handleCanvasClick}
+            className={`block max-w-full ${pickingCorners ? "cursor-crosshair" : ""}`}
+          />
+          {pickingCorners && (
+            <div className="bg-amber-50 px-4 py-2 text-sm text-amber-900">
+              Click the screen corners in this order:{" "}
+              <strong>top-left → top-right → bottom-right → bottom-left</strong>. Picked{" "}
+              {pickedCorners.length} of 4. Output goes to browser console.
+            </div>
+          )}
         </div>
       </div>
     </div>
