@@ -10,6 +10,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@mockymax/render-core':
+        specifier: workspace:*
+        version: link:../../packages/render-core
       '@mockymax/scene-format':
         specifier: workspace:*
         version: link:../../packages/scene-format
