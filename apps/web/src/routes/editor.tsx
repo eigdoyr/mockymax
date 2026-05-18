@@ -4,6 +4,7 @@ import { useEditorStore } from "../stores/editor-store";
 import { loadScene } from "../lib/scene-loader";
 import { composite } from "@mockymax/render-core";
 import type { SceneManifestV1 } from "@mockymax/scene-format";
+import { exportCanvasAsPng } from "../lib/export";
 
 export const Route = createFileRoute("/editor")({
   component: EditorPage,
@@ -30,6 +31,15 @@ function EditorPage() {
       setStatus("scene loaded");
     } catch (err) {
       setStatus(err instanceof Error ? err.message : "failed");
+    }
+  }
+
+  async function handleExport() {
+    if (!canvasRef.current) return;
+    try {
+      await exportCanvasAsPng(canvasRef.current);
+    } catch (err) {
+      setStatus(err instanceof Error ? err.message : "export failed");
     }
   }
 
@@ -91,6 +101,14 @@ function EditorPage() {
             Load demo scene
           </button>
           <input type="file" accept="image/*" onChange={handleFileChange} className="text-sm" />
+          <button
+            type="button"
+            onClick={handleExport}
+            disabled={status !== "rendered"}
+            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm hover:bg-neutral-100 disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            Export PNG
+          </button>
           <button
             type="button"
             onClick={() => {
