@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "studio/macbook-concrete-01",
-  "name": "MacBook on Concrete",
+  "id": "studio/display-concrete-01",
+  "name": "Studio Display on Concrete",
   "collection": "studio",
   "device": {
-    "type": "laptop",
-    "model": "macbook-pro-16",
+    "type": "desktop",
+    "model": "studio-display",
     "screenAspectRatio": "16:10"
   },
   "tags": ["minimal", "concrete", "overcast", "top-down"],
@@ -16,10 +16,10 @@
     "thumb": "thumb.webp"
   },
   "screenQuad": {
-    "topLeft": [258, 110],
-    "topRight": [784, 111],
-    "bottomLeft": [286, 353],
-    "bottomRight": [742, 354]
+    "topLeft": [250, 152],
+    "topRight": [773, 150],
+    "bottomLeft": [248, 453],
+    "bottomRight": [774, 452]
   },
   "render": {
     "reflectionBlendMode": "screen",
