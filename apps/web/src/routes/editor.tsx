@@ -24,7 +24,7 @@ function EditorPage() {
   const [pickedCorners, setPickedCorners] = useState<Array<[number, number]>>([]);
 
   async function handleLoadScene() {
-    const id = "studio/macbook-concrete-01";
+    const id = "studio/display-concrete-01";
     setStatus("loading scene…");
     try {
       const data = await loadScene(id);

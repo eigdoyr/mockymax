@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "scenes": [
     {
-      "id": "studio/macbook-concrete-01",
-      "path": "studio/macbook-concrete-01"
+      "id": "studio/display-concrete-01",
+      "path": "studio/display-concrete-01"
     }
   ]
 }
