@@ -2,9 +2,12 @@ import { test, expect } from "@playwright/test";
 import path from "node:path";
 
 test("editor composites a screenshot into the demo scene", async ({ page }) => {
-  await page.goto("/editor");
+  await page.goto("/editor", { waitUntil: "networkidle" });
 
-  await page.getByRole("button", { name: "Load demo scene" }).click();
+  const loadButton = page.getByRole("button", { name: "Load demo scene" });
+  await loadButton.waitFor({ state: "visible", timeout: 30_000 });
+  await loadButton.click();
+
   await expect(page.getByText("status: scene loaded")).toBeVisible();
 
   const fileInput = page.locator('input[type="file"]');
