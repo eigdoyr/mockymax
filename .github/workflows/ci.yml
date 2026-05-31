@@ -45,6 +45,9 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Build workspace packages
+        run: pnpm --filter "./packages/*" build
+
       - name: Install Playwright browsers
         run: pnpm --filter web exec playwright install --with-deps chromium
 
