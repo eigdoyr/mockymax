@@ -1,0 +1,21 @@
+{
+  "name": "@mockymax/generation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Batch image generation pipeline for MockyMax scenes.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.5.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.7.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "prompts": [
+    {
+      "id": "test-001",
+      "collection": "studio",
+      "prompt": "A simple silver minimalist computer monitor centered on a light gray concrete surface against a plain white wall, screen displaying solid pure white, sharp clean edges, photorealistic product photography, soft natural light, no other objects",
+      "aspectRatio": "16:9"
+    }
+  ]
+}

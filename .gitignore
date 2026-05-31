@@ -15,8 +15,8 @@ pnpm-debug.log*
 
 # Environment
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # Editor
 .vscode/*
@@ -37,3 +37,6 @@ apps/web/test-results/
 apps/web/playwright-report/
 apps/web/blob-report/
 apps/web/.playwright/
+
+# Generation outputs (ephemeral)
+generation/output/
