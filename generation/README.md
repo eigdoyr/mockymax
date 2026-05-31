@@ -49,6 +49,12 @@ Each generation produces:
 
 ~$0.06 per image (Flux Pro 1.1 Ultra).
 
+## Approach validation
+
+v0.2 prompt approach was validated by issue #34 (viability test). See `docs/v0.2-viability-test.md` for keep rates per device category and the principles that came out of it.
+
+Key takeaway: editorial-fashion language ("Kinfolk Magazine still life, chiaroscuro lighting, body fragment") works substantially better than product-photography language ("8k, photorealistic, professional product photography") for hitting an editorial mood.
+
 ## Workflow
 
 1. Add prompts to `prompts.json`
