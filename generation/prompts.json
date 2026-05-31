@@ -2,153 +2,153 @@
   "schemaVersion": 1,
   "prompts": [
     {
-      "id": "monitor-concrete-overcast-01",
+      "id": "monitor-oak-window-01",
       "collection": "studio",
-      "prompt": "Editorial product photograph of a silver thin-bezel computer monitor on a single aluminum stand, set back in the frame at 40 percent canvas height, on a light gray polished concrete surface, plain off-white wall background, soft overcast natural light from the upper left, slight 10-degree perspective showing the screen with subtle angle, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal Scandinavian aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos, no text, no decorations.",
+      "prompt": "Editorial still life, in the style of Kinfolk Magazine. An unbranded slim matte black computer monitor with ultra-thin bezels, centered in the lower two-thirds of the frame, positioned face-on to camera with a barely perceptible 5-degree rightward tilt. Resting on a solid white oak desk that fills the bottom of the frame, set against a pale mushroom plaster wall. A single hardcover book in linen binding lies just left of the monitor stand, paper-edges visible. Late morning side light from a left-facing window casting a long soft shadow across the desk. Screen displays pure white #FFFFFF with razor-sharp rectangular edges. Restrained, contemplative, intentional negative space above the device. No logos, no text, no brand markings, no plants, no cables.",
       "aspectRatio": "16:9"
     },
     {
-      "id": "monitor-wood-morning-01",
+      "id": "monitor-travertine-strobe-01",
       "collection": "studio",
-      "prompt": "Editorial product photograph of a dark gray thin-bezel computer monitor on a slim metallic stand, centered with breathing room around it, on a warm oak wood surface, plain pale beige wall background, soft warm morning light from the right casting gentle shadow on the wood grain, very slight angle showing the screen with subtle perspective, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos, no text.",
-      "aspectRatio": "16:9"
+      "prompt": "Editorial commercial photography in the style of Aesop brand campaigns. An unbranded slim brushed aluminum monitor positioned face-on, centered horizontally but pushed to upper two-thirds of frame, resting on a thick travertine stone slab. Background is a seamless pale warm beige void. Single hard directional studio strobe from upper-left creating a crisp defined shadow falling to the right of the device and across the travertine. Screen displays pure white #FFFFFF with sharp rectangular edges. Sculptural, austere, museum-quality. No logos, no text, no brand markings, no extra objects.",
+      "aspectRatio": "4:3"
     },
     {
-      "id": "monitor-marble-dim-01",
+      "id": "monitor-velvet-chiaroscuro-01",
       "collection": "leather",
-      "prompt": "Editorial product photograph of a black thin-bezel computer monitor on a low minimalist stand, set back in the frame, on a polished white marble surface with subtle veining, deep dark gray wall background, moody dim directional light from above casting soft shadow, slight perspective showing the screen at angle, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no decorations.",
+      "prompt": "Editorial product still life with chiaroscuro lighting in the style of Wallpaper Magazine. An unbranded slim dark gray monitor with thin bezels, positioned face-on to camera, centered in the frame, resting on a deep burgundy velvet draped surface that pools at the base. Deep charcoal plaster wall background. Single dim warm tungsten light from far upper-right, illuminating only the screen face and the front edge of the monitor while the surrounding velvet and wall fall into deep shadow. Screen displays pure white #FFFFFF with sharp rectangular edges. Moody, theatrical, restrained luxury. No logos, no text, no brand markings, no cables.",
       "aspectRatio": "16:9"
     },
     {
-      "id": "monitor-paper-soft-01",
+      "id": "monitor-linen-overcast-01",
       "collection": "soft",
-      "prompt": "Editorial product photograph of a silver thin-bezel computer monitor on a thin aluminum stand, positioned slightly off-center to the right, on a cream textured paper surface, soft warm beige wall background, very soft diffused light from the upper left, gentle 8-degree perspective showing the screen, screen displaying solid pure white with sharp clearly defined rectangular edges, calm minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos.",
-      "aspectRatio": "16:9"
+      "prompt": "Editorial still life in the style of AnOther Magazine interior features. An unbranded slim ceramic-white monitor with thin bezels, positioned face-on, set slightly off-center to the right of the frame, resting on a draped cream raw linen fabric that folds naturally beneath the stand. Wall background is the same cream linen, blurred. Soft overcast natural daylight from a high left window, no harsh shadows, even diffused fill. Screen displays pure white #FFFFFF with sharp rectangular edges. Calm, tactile, ethereal, abundant negative space upper-left. No logos, no text, no brand markings.",
+      "aspectRatio": "4:3"
     },
     {
-      "id": "monitor-metal-studio-01",
+      "id": "monitor-concrete-rembrandt-01",
       "collection": "studio",
-      "prompt": "Editorial product photograph of a dark thin-bezel computer monitor on a metallic platform stand, on a brushed stainless steel surface, plain industrial gray wall background, cool overcast studio light from above with subtle reflection on the surface, slight perspective angle showing the screen, screen displaying solid pure white with sharp clearly defined rectangular edges, industrial minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no decorations.",
+      "prompt": "Editorial commercial photograph with Rembrandt lighting. An unbranded slim matte black monitor with thin bezels, positioned face-on with screen squared to camera, centered horizontally and pushed to the right third of the frame. Resting on a raw polished concrete plinth that fills the bottom quarter of the image. Background is a darker concrete wall. Single key light from camera-left at 45 degrees casting a triangle of light on the monitor body. Screen displays pure white #FFFFFF with sharp rectangular edges. Brutalist, architectural, intentional. No logos, no text, no brand markings, no clutter.",
       "aspectRatio": "16:9"
     },
     {
-      "id": "phone-hand-soft-01",
+      "id": "phone-pocket-denim-01",
       "collection": "hands",
-      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, held vertically by a person's relaxed fingertips at the lower edge only, framed in the upper portion of the image, against a soft cream linen draped background, warm soft natural window light from the right, shallow depth of field with hand slightly soft and phone in sharp focus, screen displaying solid pure white with sharp clearly defined rectangular edges, calm editorial aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons, no UI elements.",
+      "prompt": "Editorial fashion still life. A slim unbranded matte black smartphone with thin bezels tucked halfway into the back pocket of dark indigo raw denim jeans, the upper half of the phone visible with screen facing camera. Body fragment framing — only the lower torso and pocket area visible, no face, no full body. Phone tilted slightly, screen oriented to be readable to viewer. Soft directional natural light from a left window casting subtle shadow along the denim weave. Screen displays pure white #FFFFFF with sharp rectangular edges. Intimate, candid, body-as-subject. No logos, no text, no brand markings, no app icons, no UI elements.",
       "aspectRatio": "3:4"
     },
     {
-      "id": "phone-concrete-flat-01",
+      "id": "phone-lap-sweater-01",
+      "collection": "hands",
+      "prompt": "Editorial intimate still life in the style of Kinfolk Magazine. A slim unbranded white smartphone with thin bezels resting flat and face-up on the lap of a person wearing oatmeal cream chunky knit wool sweater, framed from chest down so only the lap and a single relaxed hand resting near the phone are visible. The phone is positioned in the center of the lap, perfectly horizontal. Soft warm afternoon window light from the right. Screen displays pure white #FFFFFF with sharp rectangular edges. Languid, contemplative, tactile, body fragment composition. No logos, no text, no brand markings, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-marble-gel-01",
       "collection": "studio",
-      "prompt": "Editorial flat-lay product photograph from directly above of a slim black smartphone with thin minimal bezels, centered on a light gray polished concrete surface, soft overcast natural light, screen displaying solid pure white with sharp clearly defined rectangular edges, minimalist composition with significant negative space around the phone, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons, no UI elements.",
+      "prompt": "Editorial commercial photograph in the style of avant-garde fashion editorials. A slim unbranded black smartphone with thin bezels, propped at a 15-degree backward lean against a small unbranded geometric matte stone wedge, on a polished cool-white marble surface with subtle gray veining. Background is a darker gray void. Lit by a single hard cool-blue gel light from upper-left and a warm amber gel fill from lower-right, creating dual-tone color shadows on the marble. Phone screen oriented frontally to camera, screen displays pure white #FFFFFF with sharp rectangular edges. Bold, stylized, magazine-cover. No logos, no text, no brand markings, no app icons.",
       "aspectRatio": "3:4"
     },
     {
-      "id": "phone-leather-warm-01",
+      "id": "phone-hand-fragment-01",
+      "collection": "hands",
+      "prompt": "Editorial fashion close-up. A slim unbranded matte gray smartphone with thin bezels held vertically by a single hand, only the fingers and lower palm visible — wrist and arm cropped out of frame. Fingers wrap the lower third of the device, screen facing camera, phone tilted toward the viewer at a 10-degree forward angle. Background is a warm terracotta plaster wall, slightly blurred. Soft directional natural light from the upper left, casting a soft shadow of the phone onto the back of the hand. Screen displays pure white #FFFFFF with sharp rectangular edges. Intimate, body-as-subject, restrained. No logos, no text, no brand markings.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-leather-cognac-01",
       "collection": "leather",
-      "prompt": "Editorial product photograph of a slim dark gray smartphone with thin minimal bezels, lying flat on a tan vegetable-tanned leather surface with visible grain, slight angle from above, warm directional light from the upper left casting subtle shadow on the leather, screen displaying solid pure white with sharp clearly defined rectangular edges, rich editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
+      "prompt": "Editorial product still life in the style of high-end leather goods catalogs. A slim unbranded ceramic-white smartphone with thin bezels lying flat and face-up at a slight 15-degree clockwise rotation, on a cognac vegetable-tanned leather surface with rich visible grain. A leather-bound notebook lies just out of focus in the upper-right of the frame, its corner visible. Warm directional light from the right, late golden hour. Screen displays pure white #FFFFFF with sharp rectangular edges. Rich, tactile, lived-in. No logos, no text, no brand markings, no app icons.",
       "aspectRatio": "1:1"
     },
     {
-      "id": "phone-marble-cool-01",
+      "id": "phone-stone-altar-01",
       "collection": "studio",
-      "prompt": "Editorial product photograph of a slim white smartphone with thin minimal bezels, propped at a slight angle against a small clean stone wedge, on a polished white marble surface with subtle veining, cool soft overhead light, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal gallery aesthetic, photorealistic professional product photography, 8k. Empty scene with no other objects beyond the small support, no logos, no text.",
+      "prompt": "Editorial sculptural still life. A slim unbranded matte black smartphone with thin bezels standing upright vertically, balanced on its short bottom edge centered on a small dark gray stone plinth that rises from a textured concrete floor. Screen oriented frontally to camera. Background is a seamless pale stone wall. Single hard light from camera-left creating a long sharp shadow extending to the right. Screen displays pure white #FFFFFF with sharp rectangular edges. Brutalist, architectural, gallery. No logos, no text, no brand markings, no app icons.",
       "aspectRatio": "3:4"
     },
     {
-      "id": "phone-hand-dim-01",
-      "collection": "hands",
-      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, held vertically by a single hand from the side with fingers wrapping the lower edge, in a dimly lit dark gray room, single soft directional light from the upper right illuminating only the phone screen and edge of the hand, deep shadows on the background, screen displaying solid pure white with sharp clearly defined rectangular edges, moody cinematic aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "phone-wood-morning-01",
-      "collection": "studio",
-      "prompt": "Editorial product photograph of a slim dark gray smartphone with thin minimal bezels, lying flat on a warm walnut wood surface with subtle grain pattern, shot from slightly above at a 20-degree angle, warm morning light from the right, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "phone-pair-flat-01",
-      "collection": "studio",
-      "prompt": "Editorial flat-lay product photograph from directly above of two slim black smartphones with thin minimal bezels, placed side by side with small even gap between them, on a pale gray concrete surface, soft overcast natural light, both screens displaying solid pure white with sharp clearly defined rectangular edges, symmetrical minimal composition, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "phone-linen-soft-01",
+      "id": "phone-wool-overcast-01",
       "collection": "soft",
-      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, lying flat on a draped natural linen fabric with soft folds and texture, shot from a slight angle, very soft diffused natural light, screen displaying solid pure white with sharp clearly defined rectangular edges, calm tactile aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text.",
-      "aspectRatio": "3:4"
+      "prompt": "Editorial textile still life in the style of Kinfolk. A slim unbranded gold-toned smartphone with thin bezels lying flat at a 30-degree rotation, on a folded pale gray wool blanket with visible weave texture. The blanket fills the frame, no other visible elements. Soft overcast natural daylight from above, no harsh shadows. Screen displays pure white #FFFFFF with sharp rectangular edges. Quiet, tactile, restrained, oversize negative space lower-left. No logos, no text, no brand markings.",
+      "aspectRatio": "1:1"
     },
     {
-      "id": "phone-hand-warm-01",
-      "collection": "hands",
-      "prompt": "Editorial product photograph of a slim white smartphone with thin minimal bezels, held vertically by a hand from the bottom with fingers gently curled around the lower third, against a warm beige plaster wall background, golden hour directional light from the left side, screen displaying solid pure white with sharp clearly defined rectangular edges, warm editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. No logos, no text, no app icons.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "phone-stone-overhead-01",
-      "collection": "studio",
-      "prompt": "Editorial flat-lay product photograph from directly above of a slim dark gray smartphone with thin minimal bezels, centered on a dark slate stone surface with natural texture, soft moody overcast light, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic minimal composition with deep tonal contrast, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "tablet-concrete-overcast-01",
-      "collection": "studio",
-      "prompt": "Editorial product photograph of a slim dark gray tablet with thin minimal bezels in landscape orientation, lying flat on a light gray polished concrete surface, soft overcast natural light from the upper left, shot from a slight 20-degree angle above, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text, no app icons.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "tablet-hand-soft-01",
-      "collection": "hands",
-      "prompt": "Editorial product photograph of a slim white tablet with thin minimal bezels in portrait orientation, held by a single hand from the lower edge with fingers wrapping around the bottom corner only, against a soft cream linen draped background, warm diffused natural light, shallow depth of field, screen displaying solid pure white with sharp clearly defined rectangular edges, calm editorial aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons, no UI elements.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "tablet-leather-warm-01",
-      "collection": "leather",
-      "prompt": "Editorial product photograph of a slim black tablet with thin minimal bezels lying flat on a tan vegetable-tanned leather desk pad with visible grain, in landscape orientation, warm directional light from the upper right casting subtle shadow on the leather, shot from above at a 25-degree angle, screen displaying solid pure white with sharp clearly defined rectangular edges, rich editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "tablet-wood-morning-01",
-      "collection": "studio",
-      "prompt": "Editorial product photograph of a slim silver tablet with thin minimal bezels propped at a low angle against a small wooden block, on a warm oak wood surface, in landscape orientation, soft warm morning light from the left, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects beyond the small wooden support, no stylus, no keyboard, no logos, no text.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "tablet-marble-dim-01",
-      "collection": "studio",
-      "prompt": "Editorial product photograph of a slim dark gray tablet with thin minimal bezels in portrait orientation, lying flat on a polished white marble surface with subtle veining, moody dim directional light from above casting soft shadow on the marble, shot from a slight angle, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text.",
-      "aspectRatio": "3:4"
-    },
-    {
-      "id": "laptop-alcove-warm-01",
-      "collection": "studio",
-      "prompt": "Editorial product photograph of a slim unbranded aluminum laptop with no markings, open at a slight angle showing the screen as the dominant element, set inside a beige plaster textured wall alcove with depth, warm soft natural light from above the alcove, the keyboard area is in deep shadow and out of focus in the lower portion of the frame, screen tilted slightly toward camera, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings, no individual key letters or symbols visible.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "laptop-cropped-low-01",
-      "collection": "studio",
-      "prompt": "Editorial close-up product photograph of just the upper portion of a slim unbranded aluminum laptop with no markings, framed so only the screen and top edge of the laptop body are visible, keyboard cropped entirely below the frame, against a pale gray plaster wall background, soft natural light from the upper left, screen tilted slightly toward camera, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, photorealistic professional product photography, generic unbranded design, 8k. No plants, no books, no logos, no text, no brand markings.",
-      "aspectRatio": "16:9"
-    },
-    {
-      "id": "laptop-pulled-back-soft-01",
+      "id": "phone-paper-window-01",
       "collection": "soft",
-      "prompt": "Editorial product photograph of a slim unbranded aluminum laptop with no markings, open with screen tilted toward camera, set back in the frame occupying only 35 percent of the canvas, on a cream textured surface, against a soft warm beige wall background, very soft diffused natural light, the keyboard is small and partially out of focus due to shallow depth of field, screen displaying solid pure white with sharp clearly defined rectangular edges, calm minimal aesthetic, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings.",
-      "aspectRatio": "16:9"
+      "prompt": "Editorial still life in the style of Magazine B publications. A slim unbranded silver smartphone with thin bezels lying flat and face-up, screen facing camera, on a stack of two cream textured paper books with worn edges. The phone is positioned in the upper-left third of the frame. Background is a pale beige plaster wall. Late afternoon side window light from the right, casting long soft shadows. Screen displays pure white #FFFFFF with sharp rectangular edges. Lived-in, editorial, intentional. No logos, no text, no brand markings.",
+      "aspectRatio": "4:3"
     },
     {
-      "id": "laptop-shadow-dim-01",
+      "id": "phone-velvet-strobe-01",
       "collection": "leather",
-      "prompt": "Editorial product photograph of a slim unbranded dark gray laptop with no markings, open at an angle on a tan vegetable-tanned leather surface, in a moody dimly lit room, single soft directional light from the upper right illuminating only the screen and the front edge of the laptop, deep shadows covering the keyboard area entirely, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic cinematic aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings, no individual key letters visible.",
+      "prompt": "Editorial commercial product photograph in the style of luxury beauty brand campaigns. A slim unbranded black smartphone with thin bezels lying flat at a slight 10-degree rotation, on a deep emerald green velvet surface that fills the frame with rich texture. Background is darker green velvet, slightly blurred. Single hard directional studio strobe from upper-left, casting a defined dark shadow to the right of the phone. Screen displays pure white #FFFFFF with sharp rectangular edges. Theatrical, luxurious, magazine cover quality. No logos, no text, no brand markings.",
+      "aspectRatio": "1:1"
+    },
+    {
+      "id": "phone-wrist-watch-01",
+      "collection": "hands",
+      "prompt": "Editorial fashion close-up. A slim unbranded matte black smartphone with thin bezels held vertically in a left hand wearing a minimalist round silver watch with black leather strap on the wrist, framed tightly to show only the wrist, hand, and phone. Phone screen tilted 15 degrees toward camera. Background is a warm cream plaster wall, softly blurred. Soft natural window light from the left, illuminating both watch face and phone screen. Screen displays pure white #FFFFFF with sharp rectangular edges. Intimate, lifestyle editorial, body-as-subject. No logos, no text, no brand markings.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "tablet-linen-window-01",
+      "collection": "studio",
+      "prompt": "Editorial still life in the style of Kinfolk Magazine. An unbranded slim white aluminum tablet with thin bezels in landscape orientation, lying flat and face-up at a slight 20-degree counterclockwise rotation, on a pale cream raw linen surface with visible weave. The tablet is positioned in the lower-right of the frame leaving generous negative space upper-left. Background is the same cream linen, slightly blurred. Soft late morning side window light from the left, casting a long subtle shadow. Screen displays pure white #FFFFFF with sharp rectangular edges. Restrained, ethereal, contemplative. No logos, no text, no brand markings, no app icons.",
       "aspectRatio": "16:9"
     },
     {
-      "id": "laptop-three-quarter-overcast-01",
+      "id": "tablet-hand-cradle-01",
+      "collection": "hands",
+      "prompt": "Editorial intimate still life. An unbranded slim dark gray tablet with thin bezels in portrait orientation, cradled gently in two open palms from below, fingers visible at the bottom edges only, no wrists, no arms, no face. Tablet tilted slightly toward the camera at 10 degrees. Background is a soft blurred warm taupe linen drape. Soft warm window light from upper-right. Screen displays pure white #FFFFFF with sharp rectangular edges. Tactile, ritualistic, intimate body fragment. No logos, no text, no brand markings, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "tablet-leather-book-01",
+      "collection": "leather",
+      "prompt": "Editorial still life in the style of high-end stationery brand catalogs. An unbranded slim black tablet with thin bezels in landscape orientation, lying flat and face-up on top of a closed leather-bound vintage book with worn cognac leather and visible binding stitch. The book and tablet sit on a darker walnut wood desk. Warm directional light from the right, late afternoon golden hour. Tablet positioned center-frame with the book corners visible beneath. Screen displays pure white #FFFFFF with sharp rectangular edges. Lived-in, scholarly, tactile. No logos, no text, no brand markings.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "tablet-marble-plinth-01",
       "collection": "studio",
-      "prompt": "Editorial product photograph of a slim unbranded silver laptop with no markings, three-quarter side view from the right, open with screen facing left and tilted slightly toward camera, on a light gray concrete surface, soft overcast natural light from above, the keyboard is heavily foreshortened from this angle and partially in shadow, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings.",
+      "prompt": "Editorial sculptural product photograph in the style of museum collection catalogs. An unbranded slim white ceramic tablet with thin bezels in portrait orientation, propped at a 70-degree backward lean against a low matte black geometric plinth. The plinth sits on a polished gray-veined marble floor. Background is a seamless pale warm gray void. Single soft overhead key light with a subtle fill from below. Screen displays pure white #FFFFFF with sharp rectangular edges. Gallery, sculptural, considered. No logos, no text, no brand markings.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "tablet-concrete-shadow-01",
+      "collection": "studio",
+      "prompt": "Editorial commercial photograph with hard sculpted shadow. An unbranded slim matte black tablet with thin bezels in landscape orientation, lying flat at a 25-degree clockwise rotation, on a raw polished concrete surface with subtle imperfections. Single hard directional light from upper-left casting a sharp clean shadow extending diagonally across the concrete to the lower-right. Background is the same concrete wall. Screen displays pure white #FFFFFF with sharp rectangular edges. Architectural, brutalist, intentional. No logos, no text, no brand markings.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-alcove-tungsten-01",
+      "collection": "studio",
+      "prompt": "Editorial architectural still life in the style of Wallpaper Magazine interior shoots. An open unbranded slim aluminum laptop with no markings, set deep inside a recessed warm beige plaster wall alcove, the laptop positioned face-on to camera occupying only 35 percent of frame height. Screen tilted slightly back at a comfortable viewing angle. Single warm tungsten light from above the alcove illuminating the screen face directly, while the keyboard area falls into deep moody shadow nearly black. The opening of the alcove forms a strong rectangular frame around the laptop. Screen displays pure white #FFFFFF with sharp rectangular edges. Dramatic, theatrical, brutalist. No logos, no text, no brand markings, no individual key letters visible.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-cropped-screen-01",
+      "collection": "studio",
+      "prompt": "Editorial close-up product still life. An open unbranded slim silver laptop with no markings, framed extremely tightly so only the upper half of the screen and the top edge of the laptop body are visible. Keyboard cropped entirely below the frame. Laptop positioned face-on to camera with screen squared to viewer. Background is a soft warm cream plaster wall. Single soft directional light from upper-left creating a subtle shadow on the wall behind. Screen displays pure white #FFFFFF with sharp rectangular edges. Restrained, intentional, magazine cover crop. No logos, no text, no brand markings.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-velvet-pulled-01",
+      "collection": "leather",
+      "prompt": "Editorial still life with chiaroscuro lighting. An open unbranded slim dark aluminum laptop with no markings, set back deep in the frame occupying only 30 percent of canvas height, on a deep burgundy velvet draped surface. Screen face-on, tilted at a comfortable viewing angle. Single warm directional light from upper-right illuminating only the screen face and the very front edge of the laptop body. The keyboard area is entirely in deep shadow, indistinguishable. Background is a moody dark charcoal void. Screen displays pure white #FFFFFF with sharp rectangular edges. Theatrical, restrained, gallery. No logos, no text, no brand markings, no individual keys visible.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-oak-side-01",
+      "collection": "studio",
+      "prompt": "Editorial still life in the style of Kinfolk interior features. An open unbranded slim aluminum laptop with no markings, in three-quarter side view from the right with the screen facing left and tilted 15 degrees toward the camera. The laptop occupies the right third of the frame, on a solid white oak desk surface. Background is a pale plaster wall with abundant negative space to the left of the frame. The keyboard is heavily foreshortened from this angle, partially in soft shadow. Soft directional natural window light from the upper left. Screen displays pure white #FFFFFF with sharp rectangular edges. Restrained, intentional, considered composition. No logos, no text, no brand markings, no individual key letters visible.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-shadow-strobe-01",
+      "collection": "leather",
+      "prompt": "Editorial commercial photograph in the style of luxury brand campaigns. An open unbranded slim matte black laptop with no markings, on a cognac vegetable-tanned leather desk pad with rich grain. Laptop positioned face-on to camera in lower portion of frame, screen tilted at a slight backward angle. Single hard directional studio strobe from far upper-left, illuminating the screen face and the top of the laptop housing with crisp specular highlights, while the keyboard is plunged into near-total shadow. Sharp defined shadow extending diagonally to the right across the leather. Background is a darker brown void. Screen displays pure white #FFFFFF with sharp rectangular edges. Dramatic, luxurious, theatrical. No logos, no text, no brand markings, no keyboard letters visible.",
       "aspectRatio": "16:9"
     }
   ]
