@@ -2,9 +2,153 @@
   "schemaVersion": 1,
   "prompts": [
     {
-      "id": "test-001",
+      "id": "monitor-concrete-overcast-01",
       "collection": "studio",
-      "prompt": "A simple silver minimalist computer monitor centered on a light gray concrete surface against a plain white wall, screen displaying solid pure white, sharp clean edges, photorealistic product photography, soft natural light, no other objects",
+      "prompt": "Editorial product photograph of a silver thin-bezel computer monitor on a single aluminum stand, set back in the frame at 40 percent canvas height, on a light gray polished concrete surface, plain off-white wall background, soft overcast natural light from the upper left, slight 10-degree perspective showing the screen with subtle angle, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal Scandinavian aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos, no text, no decorations.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "monitor-wood-morning-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a dark gray thin-bezel computer monitor on a slim metallic stand, centered with breathing room around it, on a warm oak wood surface, plain pale beige wall background, soft warm morning light from the right casting gentle shadow on the wood grain, very slight angle showing the screen with subtle perspective, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos, no text.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "monitor-marble-dim-01",
+      "collection": "leather",
+      "prompt": "Editorial product photograph of a black thin-bezel computer monitor on a low minimalist stand, set back in the frame, on a polished white marble surface with subtle veining, deep dark gray wall background, moody dim directional light from above casting soft shadow, slight perspective showing the screen at angle, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no decorations.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "monitor-paper-soft-01",
+      "collection": "soft",
+      "prompt": "Editorial product photograph of a silver thin-bezel computer monitor on a thin aluminum stand, positioned slightly off-center to the right, on a cream textured paper surface, soft warm beige wall background, very soft diffused light from the upper left, gentle 8-degree perspective showing the screen, screen displaying solid pure white with sharp clearly defined rectangular edges, calm minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no logos.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "monitor-metal-studio-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a dark thin-bezel computer monitor on a metallic platform stand, on a brushed stainless steel surface, plain industrial gray wall background, cool overcast studio light from above with subtle reflection on the surface, slight perspective angle showing the screen, screen displaying solid pure white with sharp clearly defined rectangular edges, industrial minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no plants, no books, no cables, no keyboard, no mouse, no decorations.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "phone-hand-soft-01",
+      "collection": "hands",
+      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, held vertically by a person's relaxed fingertips at the lower edge only, framed in the upper portion of the image, against a soft cream linen draped background, warm soft natural window light from the right, shallow depth of field with hand slightly soft and phone in sharp focus, screen displaying solid pure white with sharp clearly defined rectangular edges, calm editorial aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons, no UI elements.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-concrete-flat-01",
+      "collection": "studio",
+      "prompt": "Editorial flat-lay product photograph from directly above of a slim black smartphone with thin minimal bezels, centered on a light gray polished concrete surface, soft overcast natural light, screen displaying solid pure white with sharp clearly defined rectangular edges, minimalist composition with significant negative space around the phone, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons, no UI elements.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-leather-warm-01",
+      "collection": "leather",
+      "prompt": "Editorial product photograph of a slim dark gray smartphone with thin minimal bezels, lying flat on a tan vegetable-tanned leather surface with visible grain, slight angle from above, warm directional light from the upper left casting subtle shadow on the leather, screen displaying solid pure white with sharp clearly defined rectangular edges, rich editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
+      "aspectRatio": "1:1"
+    },
+    {
+      "id": "phone-marble-cool-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim white smartphone with thin minimal bezels, propped at a slight angle against a small clean stone wedge, on a polished white marble surface with subtle veining, cool soft overhead light, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal gallery aesthetic, photorealistic professional product photography, 8k. Empty scene with no other objects beyond the small support, no logos, no text.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-hand-dim-01",
+      "collection": "hands",
+      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, held vertically by a single hand from the side with fingers wrapping the lower edge, in a dimly lit dark gray room, single soft directional light from the upper right illuminating only the phone screen and edge of the hand, deep shadows on the background, screen displaying solid pure white with sharp clearly defined rectangular edges, moody cinematic aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-wood-morning-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim dark gray smartphone with thin minimal bezels, lying flat on a warm walnut wood surface with subtle grain pattern, shot from slightly above at a 20-degree angle, warm morning light from the right, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-pair-flat-01",
+      "collection": "studio",
+      "prompt": "Editorial flat-lay product photograph from directly above of two slim black smartphones with thin minimal bezels, placed side by side with small even gap between them, on a pale gray concrete surface, soft overcast natural light, both screens displaying solid pure white with sharp clearly defined rectangular edges, symmetrical minimal composition, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "phone-linen-soft-01",
+      "collection": "soft",
+      "prompt": "Editorial product photograph of a slim black smartphone with thin minimal bezels, lying flat on a draped natural linen fabric with soft folds and texture, shot from a slight angle, very soft diffused natural light, screen displaying solid pure white with sharp clearly defined rectangular edges, calm tactile aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-hand-warm-01",
+      "collection": "hands",
+      "prompt": "Editorial product photograph of a slim white smartphone with thin minimal bezels, held vertically by a hand from the bottom with fingers gently curled around the lower third, against a warm beige plaster wall background, golden hour directional light from the left side, screen displaying solid pure white with sharp clearly defined rectangular edges, warm editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. No logos, no text, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "phone-stone-overhead-01",
+      "collection": "studio",
+      "prompt": "Editorial flat-lay product photograph from directly above of a slim dark gray smartphone with thin minimal bezels, centered on a dark slate stone surface with natural texture, soft moody overcast light, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic minimal composition with deep tonal contrast, photorealistic professional product photography, 8k. Empty scene with no other objects, no logos, no text, no app icons.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "tablet-concrete-overcast-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim dark gray tablet with thin minimal bezels in landscape orientation, lying flat on a light gray polished concrete surface, soft overcast natural light from the upper left, shot from a slight 20-degree angle above, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text, no app icons.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "tablet-hand-soft-01",
+      "collection": "hands",
+      "prompt": "Editorial product photograph of a slim white tablet with thin minimal bezels in portrait orientation, held by a single hand from the lower edge with fingers wrapping around the bottom corner only, against a soft cream linen draped background, warm diffused natural light, shallow depth of field, screen displaying solid pure white with sharp clearly defined rectangular edges, calm editorial aesthetic, photorealistic professional product photography, 8k. No logos, no text, no app icons, no UI elements.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "tablet-leather-warm-01",
+      "collection": "leather",
+      "prompt": "Editorial product photograph of a slim black tablet with thin minimal bezels lying flat on a tan vegetable-tanned leather desk pad with visible grain, in landscape orientation, warm directional light from the upper right casting subtle shadow on the leather, shot from above at a 25-degree angle, screen displaying solid pure white with sharp clearly defined rectangular edges, rich editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "tablet-wood-morning-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim silver tablet with thin minimal bezels propped at a low angle against a small wooden block, on a warm oak wood surface, in landscape orientation, soft warm morning light from the left, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects beyond the small wooden support, no stylus, no keyboard, no logos, no text.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "tablet-marble-dim-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim dark gray tablet with thin minimal bezels in portrait orientation, lying flat on a polished white marble surface with subtle veining, moody dim directional light from above casting soft shadow on the marble, shot from a slight angle, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, 8k. Empty scene with no other objects, no stylus, no keyboard, no logos, no text.",
+      "aspectRatio": "3:4"
+    },
+    {
+      "id": "laptop-alcove-warm-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim unbranded aluminum laptop with no markings, open at a slight angle showing the screen as the dominant element, set inside a beige plaster textured wall alcove with depth, warm soft natural light from above the alcove, the keyboard area is in deep shadow and out of focus in the lower portion of the frame, screen tilted slightly toward camera, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic editorial aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings, no individual key letters or symbols visible.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-cropped-low-01",
+      "collection": "studio",
+      "prompt": "Editorial close-up product photograph of just the upper portion of a slim unbranded aluminum laptop with no markings, framed so only the screen and top edge of the laptop body are visible, keyboard cropped entirely below the frame, against a pale gray plaster wall background, soft natural light from the upper left, screen tilted slightly toward camera, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, photorealistic professional product photography, generic unbranded design, 8k. No plants, no books, no logos, no text, no brand markings.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-pulled-back-soft-01",
+      "collection": "soft",
+      "prompt": "Editorial product photograph of a slim unbranded aluminum laptop with no markings, open with screen tilted toward camera, set back in the frame occupying only 35 percent of the canvas, on a cream textured surface, against a soft warm beige wall background, very soft diffused natural light, the keyboard is small and partially out of focus due to shallow depth of field, screen displaying solid pure white with sharp clearly defined rectangular edges, calm minimal aesthetic, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-shadow-dim-01",
+      "collection": "leather",
+      "prompt": "Editorial product photograph of a slim unbranded dark gray laptop with no markings, open at an angle on a tan vegetable-tanned leather surface, in a moody dimly lit room, single soft directional light from the upper right illuminating only the screen and the front edge of the laptop, deep shadows covering the keyboard area entirely, screen displaying solid pure white with sharp clearly defined rectangular edges, dramatic cinematic aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings, no individual key letters visible.",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "laptop-three-quarter-overcast-01",
+      "collection": "studio",
+      "prompt": "Editorial product photograph of a slim unbranded silver laptop with no markings, three-quarter side view from the right, open with screen facing left and tilted slightly toward camera, on a light gray concrete surface, soft overcast natural light from above, the keyboard is heavily foreshortened from this angle and partially in shadow, screen displaying solid pure white with sharp clearly defined rectangular edges, minimal editorial aesthetic, shallow depth of field, photorealistic professional product photography, generic unbranded design, 8k. Empty scene with no plants, no books, no cables, no mouse, no logos, no text, no brand markings.",
       "aspectRatio": "16:9"
     }
   ]
