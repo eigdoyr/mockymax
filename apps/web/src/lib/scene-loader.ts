@@ -30,3 +30,20 @@ export async function loadScene(id: string): Promise<SceneManifestV1> {
   const json = await res.json();
   return parseSceneManifest(json);
 }
+
+export interface LibraryItem {
+  manifest: SceneManifestV1;
+  thumbUrl: string;
+}
+
+export async function loadAllManifests(): Promise<LibraryItem[]> {
+  const library = await loadLibrary();
+  const items = await Promise.all(
+    library.scenes.map(async (entry) => {
+      const manifest = await loadScene(entry.id);
+      const thumbUrl = `${SCENES_BASE}/${entry.path}/${manifest.assets.thumb}`;
+      return { manifest, thumbUrl };
+    }),
+  );
+  return items;
+}

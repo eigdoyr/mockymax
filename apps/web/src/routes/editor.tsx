@@ -36,6 +36,27 @@ function EditorPage() {
     }
   }
 
+  useEffect(() => {
+    if (!sceneId) return;
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const data = await loadScene(sceneId);
+        if (cancelled) return;
+        setManifest(data);
+        setStatus("scene loaded");
+      } catch (err) {
+        if (cancelled) return;
+        setStatus(err instanceof Error ? err.message : "failed");
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [sceneId]);
+
   async function handleExport() {
     if (!canvasRef.current) return;
     try {
