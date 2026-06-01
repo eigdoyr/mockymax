@@ -1,4 +1,4 @@
-import { parseSceneManifest, type SceneManifestV1 } from "@mockymax/scene-format";
+import { parseSceneManifest, type SceneManifestV2 } from "@mockymax/scene-format";
 
 // Where scenes live relative to the web app's public root
 const SCENES_BASE = "/scenes";
@@ -9,7 +9,7 @@ export interface LibraryEntry {
 }
 
 export interface Library {
-  schemaVersion: 1;
+  schemaVersion: 2;
   scenes: LibraryEntry[];
 }
 
@@ -21,7 +21,7 @@ export async function loadLibrary(): Promise<Library> {
   return res.json();
 }
 
-export async function loadScene(id: string): Promise<SceneManifestV1> {
+export async function loadScene(id: string): Promise<SceneManifestV2> {
   // id is "collection/scene-name", which is also the folder path
   const res = await fetch(`${SCENES_BASE}/${id}/manifest.json`);
   if (!res.ok) {
@@ -32,7 +32,7 @@ export async function loadScene(id: string): Promise<SceneManifestV1> {
 }
 
 export interface LibraryItem {
-  manifest: SceneManifestV1;
+  manifest: SceneManifestV2;
   thumbUrl: string;
 }
 

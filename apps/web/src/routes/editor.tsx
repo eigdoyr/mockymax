@@ -2,8 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { useEditorStore } from "../stores/editor-store";
 import { loadScene } from "../lib/scene-loader";
-import { composite } from "@mockymax/render-core";
-import type { SceneManifestV1 } from "@mockymax/scene-format";
+import type { SceneManifestV2 } from "@mockymax/scene-format";
 import { exportCanvasAsPng } from "../lib/export";
 
 export const Route = createFileRoute("/editor")({
@@ -13,12 +12,11 @@ export const Route = createFileRoute("/editor")({
 function EditorPage() {
   const sceneId = useEditorStore((s) => s.sceneId);
   const setScene = useEditorStore((s) => s.setScene);
-  const screenshotUrl = useEditorStore((s) => s.screenshotUrl);
   const setScreenshot = useEditorStore((s) => s.setScreenshot);
   const reset = useEditorStore((s) => s.reset);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [manifest, setManifest] = useState<SceneManifestV1 | null>(null);
+  const [, setManifest] = useState<SceneManifestV2 | null>(null);
   const [status, setStatus] = useState<string>("idle");
   const [pickingCorners, setPickingCorners] = useState(false);
   const [pickedCorners, setPickedCorners] = useState<Array<[number, number]>>([]);
@@ -92,40 +90,6 @@ function EditorPage() {
     setScreenshot(url);
   }
 
-  // Render whenever both scene and screenshot are ready
-  useEffect(() => {
-    if (!manifest || !screenshotUrl || !canvasRef.current) return;
-
-    const canvas = canvasRef.current;
-    setStatus("rendering…");
-
-    (async () => {
-      try {
-        const sceneId = manifest.id;
-        const bgUrl = `/scenes/${sceneId}/${manifest.assets.background}`;
-
-        const [bg, shot] = await Promise.all([loadImage(bgUrl), loadImage(screenshotUrl)]);
-
-        canvas.width = bg.width;
-        canvas.height = bg.height;
-
-        composite(canvas, {
-          background: bg,
-          screenshot: shot,
-          screenQuad: [
-            manifest.screenQuad.topLeft,
-            manifest.screenQuad.topRight,
-            manifest.screenQuad.bottomRight,
-            manifest.screenQuad.bottomLeft,
-          ],
-        });
-        setStatus("rendered");
-      } catch (err) {
-        setStatus(err instanceof Error ? err.message : "render failed");
-      }
-    })();
-  }, [manifest, screenshotUrl]);
-
   return (
     <div className="space-y-6">
       <div>
@@ -197,14 +161,4 @@ function EditorPage() {
       </div>
     </div>
   );
-}
-
-function loadImage(src: string): Promise<HTMLImageElement> {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => resolve(img);
-    img.onerror = reject;
-    img.src = src;
-  });
 }
