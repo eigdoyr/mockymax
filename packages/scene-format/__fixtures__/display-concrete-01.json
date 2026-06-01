@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/display-concrete-01",
+  "name": "Studio Display on Concrete",
+  "collection": "studio",
+  "device": {
+    "type": "desktop",
+    "model": "generic-monitor"
+  },
+  "tags": ["minimal", "concrete", "overcast", "front-facing"],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.webp",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

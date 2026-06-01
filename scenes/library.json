@@ -1,9 +1,4 @@
 {
-  "schemaVersion": 1,
-  "scenes": [
-    {
-      "id": "studio/display-concrete-01",
-      "path": "studio/display-concrete-01"
-    }
-  ]
+  "schemaVersion": 2,
+  "scenes": []
 }

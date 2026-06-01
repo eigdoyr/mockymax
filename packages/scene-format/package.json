@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
@@ -27,7 +28,9 @@
     "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "prettier": "^3.3.0",
-    "typescript": "~5.7.0"
+    "typescript": "~5.7.0",
+    "vitest": "^2.1.9"
   }
 }

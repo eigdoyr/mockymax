@@ -1,15 +1,15 @@
-import { sceneManifestSchemaV1, type SceneManifestV1 } from "./schema.js";
+import { sceneManifestSchemaV2, type SceneManifestV2 } from "./schema.js";
 
 /**
- * Parse and validate an unknown value against the v1 scene manifest schema.
+ * Parse and validate an unknown value against the v2 scene manifest schema.
  *
  * Returns a typed result on success. Throws a ZodError on failure with
  * detailed information about which fields are invalid.
  *
  * For graceful handling without exceptions, use `safeParseSceneManifest`.
  */
-export function parseSceneManifest(input: unknown): SceneManifestV1 {
-  return sceneManifestSchemaV1.parse(input);
+export function parseSceneManifest(input: unknown): SceneManifestV2 {
+  return sceneManifestSchemaV2.parse(input);
 }
 
 /**
@@ -18,5 +18,5 @@ export function parseSceneManifest(input: unknown): SceneManifestV1 {
  * bundles fetched from a CDN.
  */
 export function safeParseSceneManifest(input: unknown) {
-  return sceneManifestSchemaV1.safeParse(input);
+  return sceneManifestSchemaV2.safeParse(input);
 }

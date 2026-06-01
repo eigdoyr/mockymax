@@ -8,7 +8,7 @@
     "build": "tsr generate && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsr generate && tsc --noEmit",
+    "typecheck": "tsr generate && tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tests/tsconfig.json",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:visual": "playwright test"
