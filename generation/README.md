@@ -58,10 +58,24 @@ Key takeaway: editorial-fashion language ("Kinfolk Magazine still life, chiarosc
 ## Workflow
 
 1. Add prompts to `prompts.json`
-2. Run the script
+2. Run `pnpm --filter @mockymax/generation generate`
 3. Review outputs visually
-4. Pick winners
-5. Use Scene Studio (`/studio` in the web app) to author the scene bundle from the winning image
+4. Move winners to `generation/output/_selected/`
+5. Run `pnpm --filter @mockymax/generation mask` to generate alpha masks via SAM 3
+6. Visually verify masks (each `{basename}-mask.png`)
+7. Use Scene Studio (`/studio` in the web app) to author the scene bundle
+
+## Mask generation
+
+The mask script uses Meta's SAM 3 (`fal-ai/sam-3/image`) with prompt
+`"screen of the device"`. Outputs:
+
+- `{basename}-mask.png` — the alpha mask
+- `{basename}-mask.json` — provenance: model, prompt, timestamp, cost
+
+Idempotent — safe to re-run. Files with existing masks are skipped.
+
+Cost: ~$0.005 per mask.
 
 ## Notes
 
