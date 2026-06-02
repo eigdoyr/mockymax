@@ -4,7 +4,7 @@ import { useEditorStore } from "../stores/editor-store";
 import { loadScene } from "../lib/scene-loader";
 import { composite } from "@mockymax/render-core";
 import type { SceneManifestV2 } from "@mockymax/scene-format";
-import { exportCanvasAsPng } from "../lib/export";
+import { ExportDialog } from "../components/export-dialog";
 
 export const Route = createFileRoute("/editor")({
   component: EditorPage,
@@ -19,6 +19,7 @@ function EditorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [manifest, setManifest] = useState<SceneManifestV2 | null>(null);
   const [status, setStatus] = useState<string>("idle");
+  const [exportOpen, setExportOpen] = useState(false);
 
   useEffect(() => {
     if (!sceneId) return;
@@ -72,15 +73,6 @@ function EditorPage() {
     };
   }, [manifest, screenshotUrl]);
 
-  async function handleExport() {
-    if (!canvasRef.current) return;
-    try {
-      await exportCanvasAsPng(canvasRef.current);
-    } catch (err) {
-      setStatus(err instanceof Error ? err.message : "export failed");
-    }
-  }
-
   function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -102,11 +94,11 @@ function EditorPage() {
           <input type="file" accept="image/*" onChange={handleFileChange} className="text-sm" />
           <button
             type="button"
-            onClick={handleExport}
+            onClick={() => setExportOpen(true)}
             disabled={status !== "rendered"}
             className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm hover:bg-neutral-100 disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            Export PNG
+            Export
           </button>
           <button
             type="button"
@@ -131,6 +123,13 @@ function EditorPage() {
           <canvas ref={canvasRef} className="block max-w-full" />
         </div>
       </div>
+      <ExportDialog
+        key={exportOpen ? "open" : "closed"}
+        open={exportOpen}
+        getCanvas={() => canvasRef.current}
+        defaultFilename={defaultExportFilename(manifest?.name)}
+        onClose={() => setExportOpen(false)}
+      />
     </div>
   );
 }
@@ -143,4 +142,12 @@ function loadImage(src: string): Promise<HTMLImageElement> {
     img.onerror = reject;
     img.src = src;
   });
+}
+
+function defaultExportFilename(sceneName: string | undefined): string {
+  if (!sceneName) return "mockymax";
+  return sceneName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
