@@ -12,7 +12,6 @@ export const Route = createFileRoute("/editor")({
 
 function EditorPage() {
   const sceneId = useEditorStore((s) => s.sceneId);
-  const setScene = useEditorStore((s) => s.setScene);
   const setScreenshot = useEditorStore((s) => s.setScreenshot);
   const screenshotUrl = useEditorStore((s) => s.screenshotUrl);
   const reset = useEditorStore((s) => s.reset);
@@ -20,21 +19,28 @@ function EditorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [manifest, setManifest] = useState<SceneManifestV2 | null>(null);
   const [status, setStatus] = useState<string>("idle");
-  const [pickingCorners, setPickingCorners] = useState(false);
-  const [pickedCorners, setPickedCorners] = useState<Array<[number, number]>>([]);
 
-  async function handleLoadScene() {
-    const id = "studio/display-concrete-01";
-    setStatus("loading scene…");
-    try {
-      const data = await loadScene(id);
-      setScene(id);
-      setManifest(data);
-      setStatus("scene loaded");
-    } catch (err) {
-      setStatus(err instanceof Error ? err.message : "failed");
-    }
-  }
+  useEffect(() => {
+    if (!sceneId) return;
+    let cancelled = false;
+
+    (async () => {
+      setStatus("loading scene…");
+      try {
+        const data = await loadScene(sceneId);
+        if (cancelled) return;
+        setManifest(data);
+        setStatus("scene loaded");
+      } catch (err) {
+        if (cancelled) return;
+        setStatus(err instanceof Error ? err.message : "failed");
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [sceneId]);
 
   useEffect(() => {
     if (!manifest || !screenshotUrl || !canvasRef.current) return;
@@ -75,25 +81,6 @@ function EditorPage() {
     }
   }
 
-  function handleCanvasClick(e: React.MouseEvent<HTMLCanvasElement>) {
-    if (!pickingCorners) return;
-    const canvas = e.currentTarget;
-    const rect = canvas.getBoundingClientRect();
-    // Scale click position from display size to canvas pixel size
-    const x = Math.round(((e.clientX - rect.left) / rect.width) * canvas.width);
-    const y = Math.round(((e.clientY - rect.top) / rect.height) * canvas.height);
-    const next = [...pickedCorners, [x, y] as [number, number]];
-    setPickedCorners(next);
-    if (next.length === 4) {
-      const [tl, tr, br, bl] = next;
-      console.log(
-        "Screen quad:",
-        JSON.stringify({ topLeft: tl, topRight: tr, bottomRight: br, bottomLeft: bl }, null, 2),
-      );
-      setPickingCorners(false);
-    }
-  }
-
   function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -105,20 +92,13 @@ function EditorPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Editor</h1>
-        <p className="mt-2 text-neutral-600">Drop a screenshot to begin.</p>
+        <p className="mt-2 text-neutral-600">
+          Pick a scene from the gallery, then drop a screenshot.
+        </p>
       </div>
 
       <div className="rounded-lg border border-neutral-200 bg-white p-6">
         <div className="flex flex-wrap items-center gap-3">
-          <button
-            type="button"
-            onClick={handleLoadScene}
-            disabled
-            title="No demo scene exists yet — will be restored in #53"
-            className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm text-white hover:bg-neutral-700 disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            Load demo scene
-          </button>
           <input type="file" accept="image/*" onChange={handleFileChange} className="text-sm" />
           <button
             type="button"
@@ -127,16 +107,6 @@ function EditorPage() {
             className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm hover:bg-neutral-100 disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Export PNG
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setPickingCorners(true);
-              setPickedCorners([]);
-            }}
-            className="rounded-md border border-amber-400 bg-amber-50 px-3 py-1.5 text-sm text-amber-900 hover:bg-amber-100"
-          >
-            Pick corners
           </button>
           <button
             type="button"
@@ -158,18 +128,7 @@ function EditorPage() {
         </div>
 
         <div className="mt-4 overflow-auto rounded border border-neutral-200 bg-neutral-50">
-          <canvas
-            ref={canvasRef}
-            onClick={handleCanvasClick}
-            className={`block max-w-full ${pickingCorners ? "cursor-crosshair" : ""}`}
-          />
-          {pickingCorners && (
-            <div className="bg-amber-50 px-4 py-2 text-sm text-amber-900">
-              Click the screen corners in this order:{" "}
-              <strong>top-left → top-right → bottom-right → bottom-left</strong>. Picked{" "}
-              {pickedCorners.length} of 4. Output goes to browser console.
-            </div>
-          )}
+          <canvas ref={canvasRef} className="block max-w-full" />
         </div>
       </div>
     </div>
