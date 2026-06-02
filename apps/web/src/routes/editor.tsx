@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { useEditorStore } from "../stores/editor-store";
 import { loadScene } from "../lib/scene-loader";
+import { composite } from "@mockymax/render-core";
 import type { SceneManifestV2 } from "@mockymax/scene-format";
 import { exportCanvasAsPng } from "../lib/export";
 
@@ -13,10 +14,11 @@ function EditorPage() {
   const sceneId = useEditorStore((s) => s.sceneId);
   const setScene = useEditorStore((s) => s.setScene);
   const setScreenshot = useEditorStore((s) => s.setScreenshot);
+  const screenshotUrl = useEditorStore((s) => s.screenshotUrl);
   const reset = useEditorStore((s) => s.reset);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [, setManifest] = useState<SceneManifestV2 | null>(null);
+  const [manifest, setManifest] = useState<SceneManifestV2 | null>(null);
   const [status, setStatus] = useState<string>("idle");
   const [pickingCorners, setPickingCorners] = useState(false);
   const [pickedCorners, setPickedCorners] = useState<Array<[number, number]>>([]);
@@ -35,25 +37,34 @@ function EditorPage() {
   }
 
   useEffect(() => {
-    if (!sceneId) return;
+    if (!manifest || !screenshotUrl || !canvasRef.current) return;
+    const canvas = canvasRef.current;
     let cancelled = false;
 
     (async () => {
       try {
-        const data = await loadScene(sceneId);
+        const bgUrl = `/scenes/${manifest.id}/${manifest.assets.background}`;
+        const maskUrl = `/scenes/${manifest.id}/${manifest.assets.mask}`;
+        const [bg, mask, shot] = await Promise.all([
+          loadImage(bgUrl),
+          loadImage(maskUrl),
+          loadImage(screenshotUrl),
+        ]);
         if (cancelled) return;
-        setManifest(data);
-        setStatus("scene loaded");
+        canvas.width = bg.width;
+        canvas.height = bg.height;
+        composite(canvas, { background: bg, mask, screenshot: shot });
+        setStatus("rendered");
       } catch (err) {
         if (cancelled) return;
-        setStatus(err instanceof Error ? err.message : "failed");
+        setStatus(err instanceof Error ? err.message : "render failed");
       }
     })();
 
     return () => {
       cancelled = true;
     };
-  }, [sceneId]);
+  }, [manifest, screenshotUrl]);
 
   async function handleExport() {
     if (!canvasRef.current) return;
@@ -102,7 +113,9 @@ function EditorPage() {
           <button
             type="button"
             onClick={handleLoadScene}
-            className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm text-white hover:bg-neutral-700"
+            disabled
+            title="No demo scene exists yet — will be restored in #53"
+            className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm text-white hover:bg-neutral-700 disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Load demo scene
           </button>
@@ -161,4 +174,14 @@ function EditorPage() {
       </div>
     </div>
   );
+}
+
+function loadImage(src: string): Promise<HTMLImageElement> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.src = src;
+  });
 }
