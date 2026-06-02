@@ -28,6 +28,13 @@ function RootLayout() {
             >
               Editor
             </Link>
+            <Link
+              to="/studio"
+              activeProps={{ className: "text-neutral-900" }}
+              className="text-neutral-600 hover:text-neutral-900"
+            >
+              Studio
+            </Link>
           </div>
         </nav>
       </header>
