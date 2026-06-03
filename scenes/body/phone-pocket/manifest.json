@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "body/phone-pocket",
+  "name": "Phone in Pocket",
+  "collection": "body",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "denim",
+    "pocket",
+    "partial"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

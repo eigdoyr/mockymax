@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/laptop-oak",
+  "name": "Laptop on Oak",
+  "collection": "studio",
+  "device": {
+    "type": "laptop",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "oak",
+    "side-angle"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

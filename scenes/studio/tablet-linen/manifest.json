@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/tablet-linen",
+  "name": "Tablet on Linen",
+  "collection": "studio",
+  "device": {
+    "type": "tablet",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "linen",
+    "window-light"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

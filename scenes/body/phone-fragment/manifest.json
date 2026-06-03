@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "id": "body/phone-fragment",
+  "name": "Phone in Hand",
+  "collection": "body",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "fragment",
+    "chiaroscuro"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

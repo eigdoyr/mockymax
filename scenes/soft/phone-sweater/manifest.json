@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "soft/phone-sweater",
+  "name": "Phone on Sweater",
+  "collection": "soft",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "sweater",
+    "lap",
+    "soft"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

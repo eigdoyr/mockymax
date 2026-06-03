@@ -1,4 +1,61 @@
 {
   "schemaVersion": 2,
-  "scenes": []
+  "scenes": [
+    {
+      "id": "body/phone-fragment",
+      "path": "body/phone-fragment"
+    },
+    {
+      "id": "body/phone-pocket",
+      "path": "body/phone-pocket"
+    },
+    {
+      "id": "body/phone-wrist",
+      "path": "body/phone-wrist"
+    },
+    {
+      "id": "soft/phone-sweater",
+      "path": "soft/phone-sweater"
+    },
+    {
+      "id": "soft/phone-wool",
+      "path": "soft/phone-wool"
+    },
+    {
+      "id": "studio/laptop-alcove",
+      "path": "studio/laptop-alcove"
+    },
+    {
+      "id": "studio/laptop-cropped",
+      "path": "studio/laptop-cropped"
+    },
+    {
+      "id": "studio/laptop-oak",
+      "path": "studio/laptop-oak"
+    },
+    {
+      "id": "studio/monitor-linen",
+      "path": "studio/monitor-linen"
+    },
+    {
+      "id": "studio/phone-paper",
+      "path": "studio/phone-paper"
+    },
+    {
+      "id": "studio/phone-stone",
+      "path": "studio/phone-stone"
+    },
+    {
+      "id": "studio/tablet-linen",
+      "path": "studio/tablet-linen"
+    },
+    {
+      "id": "tactile/phone-cognac",
+      "path": "tactile/phone-cognac"
+    },
+    {
+      "id": "tactile/tablet-book",
+      "path": "tactile/tablet-book"
+    }
+  ]
 }

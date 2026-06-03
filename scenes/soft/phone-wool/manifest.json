@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "soft/phone-wool",
+  "name": "Phone on Wool",
+  "collection": "soft",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "wool",
+    "overcast",
+    "soft"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}
