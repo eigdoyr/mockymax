@@ -12,7 +12,7 @@ Thanks for your interest. MockyMax is solo-maintained by [@eigdoyr](https://gith
 
 ## Branch Naming
 
-```
+```text
 type/short-description
 ```
 
@@ -24,7 +24,7 @@ Types: `feat`, `fix`, `chore`, `refactor`, `docs`, `test`, `style`, `perf`, `ci`
 
 [Conventional Commits](https://www.conventionalcommits.org) with **scopes**.
 
-```
+```text
 type(scope): short imperative summary
 
 Optional longer body explaining what and why.
@@ -34,7 +34,7 @@ Closes #N
 
 Examples:
 
-```
+```text
 feat(engine): add homography matrix computation
 fix(web): handle blank screenshot upload
 chore(ci): cache pnpm store
@@ -43,16 +43,17 @@ refactor(scenes): split manifest validation
 
 ### Scopes
 
-| Scope    | What it covers                                         |
-| -------- | ------------------------------------------------------ |
-| `repo`   | Repo-level files: README, LICENSE, .gitignore, configs |
-| `ci`     | GitHub Actions, workflows                              |
-| `web`    | The web app in `apps/web`                              |
-| `engine` | Rendering / compositing logic                          |
-| `scenes` | Scene library content + manifests                      |
-| `gen`    | Scene generation pipeline (Fal.ai scripts)             |
-| `docs`   | Documentation site                                     |
-| `deps`   | Dependency updates                                     |
+| Scope          | What it covers                                          |
+| -------------- | ------------------------------------------------------- |
+| `repo`         | Repo-level files: README, LICENSE, .gitignore, configs  |
+| `ci`           | GitHub Actions, workflows                               |
+| `web`          | The web app in `apps/web`                               |
+| `engine`       | Rendering / compositing logic in `packages/render-core` |
+| `scenes`       | Scene library content + manifests in `scenes/`          |
+| `gen`          | Scene generation pipeline in `generation/`              |
+| `architecture` | Cross-cutting schema / format / pipeline changes        |
+| `docs`         | Documentation, README, architecture notes               |
+| `deps`         | Dependency updates                                      |
 
 ## Code Style
 
@@ -63,7 +64,7 @@ refactor(scenes): split manifest validation
 
 ## Project Board
 
-Issues live here: https://github.com/users/eigdoyr/projects/5
+Issues live here: [project board](https://github.com/users/eigdoyr/projects/5)
 
 Milestones group issues into shippable releases (`v0.1`, `v0.2`, `v1.0`).
 
