@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/phone-stone",
+  "name": "Phone on Stone",
+  "collection": "studio",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "stone",
+    "altar",
+    "monolithic"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

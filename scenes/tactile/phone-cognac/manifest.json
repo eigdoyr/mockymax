@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "tactile/phone-cognac",
+  "name": "Phone on Cognac",
+  "collection": "tactile",
+  "device": {
+    "type": "phone",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "leather",
+    "cognac",
+    "warm"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

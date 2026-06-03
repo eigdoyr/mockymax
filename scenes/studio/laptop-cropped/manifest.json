@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/laptop-cropped",
+  "name": "Laptop Cropped",
+  "collection": "studio",
+  "device": {
+    "type": "laptop",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "cropped",
+    "three-quarter"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "tactile/tablet-book",
+  "name": "Tablet as Book",
+  "collection": "tactile",
+  "device": {
+    "type": "tablet",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "leather",
+    "book",
+    "warm"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

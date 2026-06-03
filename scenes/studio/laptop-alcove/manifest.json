@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/laptop-alcove",
+  "name": "Laptop in Alcove",
+  "collection": "studio",
+  "device": {
+    "type": "laptop",
+    "model": "generic"
+  },
+  "tags": [
+    "minimal",
+    "alcove",
+    "tungsten",
+    "shadow"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

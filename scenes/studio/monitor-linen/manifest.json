@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "studio/monitor-linen",
+  "name": "Monitor on Linen",
+  "collection": "studio",
+  "device": {
+    "type": "desktop",
+    "model": "generic-monitor"
+  },
+  "tags": [
+    "minimal",
+    "linen",
+    "overcast",
+    "front-facing"
+  ],
+  "assets": {
+    "background": "background.webp",
+    "mask": "mask.png",
+    "thumb": "thumb.webp"
+  },
+  "credit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  }
+}

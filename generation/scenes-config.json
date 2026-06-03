@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "defaultCredit": {
+    "author": "MockyMax Team",
+    "license": "CC-BY-NC-4.0"
+  },
+  "scenes": [
+    {
+      "id": "studio/laptop-alcove",
+      "source": "laptop-alcove-tungsten-01-105002863.jpg",
+      "name": "Laptop in Alcove",
+      "collection": "studio",
+      "device": { "type": "laptop", "model": "generic" },
+      "tags": ["minimal", "alcove", "tungsten", "shadow"]
+    },
+    {
+      "id": "studio/laptop-cropped",
+      "source": "laptop-cropped-screen-01-606082749.jpg",
+      "name": "Laptop Cropped",
+      "collection": "studio",
+      "device": { "type": "laptop", "model": "generic" },
+      "tags": ["minimal", "cropped", "three-quarter"]
+    },
+    {
+      "id": "studio/laptop-oak",
+      "source": "laptop-oak-side-01-173383588.jpg",
+      "name": "Laptop on Oak",
+      "collection": "studio",
+      "device": { "type": "laptop", "model": "generic" },
+      "tags": ["minimal", "oak", "side-angle"]
+    },
+    {
+      "id": "studio/monitor-linen",
+      "source": "monitor-linen-overcast-01-356861249.jpg",
+      "name": "Monitor on Linen",
+      "collection": "studio",
+      "device": { "type": "desktop", "model": "generic-monitor" },
+      "tags": ["minimal", "linen", "overcast", "front-facing"]
+    },
+    {
+      "id": "body/phone-fragment",
+      "source": "phone-hand-fragment-01-315076771.jpg",
+      "name": "Phone in Hand",
+      "collection": "body",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "fragment", "chiaroscuro"]
+    },
+    {
+      "id": "soft/phone-sweater",
+      "source": "phone-lap-sweater-01-453872709.jpg",
+      "name": "Phone on Sweater",
+      "collection": "soft",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "sweater", "lap", "soft"]
+    },
+    {
+      "id": "tactile/phone-cognac",
+      "source": "phone-leather-cognac-01-18241520.jpg",
+      "name": "Phone on Cognac",
+      "collection": "tactile",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "leather", "cognac", "warm"]
+    },
+    {
+      "id": "studio/phone-paper",
+      "source": "phone-paper-window-01-311527276.jpg",
+      "name": "Phone on Paper",
+      "collection": "studio",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "paper", "window-light"]
+    },
+    {
+      "id": "body/phone-pocket",
+      "source": "phone-pocket-denim-01-404099711.jpg",
+      "name": "Phone in Pocket",
+      "collection": "body",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "denim", "pocket", "partial"]
+    },
+    {
+      "id": "studio/phone-stone",
+      "source": "phone-stone-altar-01-439223306.jpg",
+      "name": "Phone on Stone",
+      "collection": "studio",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "stone", "altar", "monolithic"]
+    },
+    {
+      "id": "soft/phone-wool",
+      "source": "phone-wool-overcast-01-43672740.jpg",
+      "name": "Phone on Wool",
+      "collection": "soft",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "wool", "overcast", "soft"]
+    },
+    {
+      "id": "body/phone-wrist",
+      "source": "phone-wrist-watch-01-478825615.jpg",
+      "name": "Phone at Wrist",
+      "collection": "body",
+      "device": { "type": "phone", "model": "generic" },
+      "tags": ["minimal", "wrist", "hand", "fragment"]
+    },
+    {
+      "id": "tactile/tablet-book",
+      "source": "tablet-leather-book-01-955514667.jpg",
+      "name": "Tablet as Book",
+      "collection": "tactile",
+      "device": { "type": "tablet", "model": "generic" },
+      "tags": ["minimal", "leather", "book", "warm"]
+    },
+    {
+      "id": "studio/tablet-linen",
+      "source": "tablet-linen-window-01-694899274.jpg",
+      "name": "Tablet on Linen",
+      "collection": "studio",
+      "device": { "type": "tablet", "model": "generic" },
+      "tags": ["minimal", "linen", "window-light"]
+    }
+  ]
+}
